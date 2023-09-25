@@ -10,7 +10,7 @@
   border-radius: 4px;
   cursor: pointer;
   outline: none;
-  transition:  0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   padding: 4px 16px;
   color: $white-0;
 }
@@ -49,24 +49,24 @@
 
 .button-text {
   border: 0.1px solid transparent;
-  background-color: $white-0; 
+  background-color: $white-0;
   &.button-primary {
     color: $primary-main;
   }
   &.button-secondary {
-    color: $secondary-main; 
+    color: $secondary-main;
   }
   &.button-info {
     color: $info-main;
   }
   &.button-error {
-    color: $error-main; 
+    color: $error-main;
   }
   &.button-warning {
     color: $warning-main;
   }
   &.button-success {
-    color: $success-main; 
+    color: $success-main;
   }
   &:hover {
     &.button-primary {
@@ -91,7 +91,7 @@
 }
 
 .button-outlined {
-  background-color: $white-0; 
+  background-color: $white-0;
   border: 0.1px solid transparent;
   &.button-primary {
     @include button-style($white-0, $primary-main, $primary-main);

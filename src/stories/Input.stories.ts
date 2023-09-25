@@ -15,6 +15,13 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    placeholder: 'Placeholder',
+    label: 'Placeholder',
+  },
+};
+
+export const Secondary: Story = {
+  args: {
+    label: 'Placeholder',
+    variant: 'standard',
   },
 };
