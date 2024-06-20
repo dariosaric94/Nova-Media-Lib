@@ -1,20 +1,20 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Button } from '../components/Button/Button';
+import { Column } from '../components/Grid/index';
 
 const meta = {
-  title: 'Example/Button',
-  component: Button,
+  title: 'Example/Column',
+  component: Column,
   parameters: {
     layout: 'centered',
   },
   tags: ['autodocs'],
-} satisfies Meta<typeof Button>;
+} satisfies Meta<typeof Column>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    text: 'Button',
+    xs: 12,
   },
 };
