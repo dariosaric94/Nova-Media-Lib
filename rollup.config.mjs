@@ -3,21 +3,19 @@ import commonjs from '@rollup/plugin-commonjs';
 import typescript from '@rollup/plugin-typescript';
 import dts from 'rollup-plugin-dts';
 import postcss from 'rollup-plugin-postcss';
-
-// Load package.json using dynamic import
-import packageJson from './package.json' assert { type: 'json' };
+const packageJson = await import('./package.json', { assert: { type: 'json' } });
 
 export default [
   {
     input: 'src/index.ts',
     output: [
       {
-        file: packageJson.main,
+        file: packageJson.default.main,
         format: 'cjs',
         sourcemap: true,
       },
       {
-        file: packageJson.module,
+        file: packageJson.default.module,
         format: 'esm',
         sourcemap: true,
       },

@@ -40,7 +40,7 @@ export const Column: React.FC<ColumnProps> = ({ children, xs, sm, md, lg, ...res
 
   return (
     <div className={`${styles.gridItem} ${classes}`}>
-      <div {...rest}>{children}as</div>
+      <div {...rest}>{children}</div>
     </div>
   );
 };
